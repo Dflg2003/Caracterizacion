@@ -1,6 +1,5 @@
 <?php
 $documento = $_GET['documento'];
-echo $documento;
 ?>
 
 <!DOCTYPE html>
