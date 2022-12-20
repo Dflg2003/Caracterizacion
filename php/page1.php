@@ -1,273 +1,350 @@
 <?php
-$documento = $_GET['documento'];
-?>
 
+$documento = $_GET['documento'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/parallax.css">
-    <link rel="stylesheet" href="../Style/menu.css">
     <link rel="stylesheet" href="../Style/Slider.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Style/menu.css">
+    <link rel="stylesheet" href="../Style/parallax.css">
+    <link rel="shortcut icon" href="../Formulario/assets/img/logoFaticon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../">
-    <title>page2</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Page 1</title>
 </head>
 <body class="fondo">
     <header>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
-            <img src="./assets/img/LogoUni.jpg" alt="" class="logo">
-        </a>
-        <ul>
-            <li><a class="active" href="#">Formulario General de ingreso</a></li>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="../assets/img/LogoUni.jpg" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="#">Formulario General de ingreso</a></li>
+
+            </ul>
+        </nav>
+    </header>
+      <div class="contenedor">
+        <article>
+                <form action="page2.php" method="POST">
+                    <h2>Académico</h2><hr>
+<?php
+echo "<input type='hidden' name='documento' value='$documento'>";
+?>
+                 <div class="col">
+                    <label for="ke" class="form-label">¿Tu lugar de estudio se mantiene organizado, con los materiales que necesitas?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta11" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta11" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
+                 <div class="col">
+                    <label for="td" class="form-label">¿Conoces la forma en que te es más fácil aprender?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta12" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta12" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
+
+                    <div class="col">
+                        <label for="td" class="form-label">¿Organizas tu tiempo y priorizas tus tareas?</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="pregunta13" value="SI" required checked>
+                            <label class="form-check-label" for="radio1">SI</label>
+                          </div>
+
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="pregunta13" value="NO" required>
+                            <label class="form-check-label" for="radio2">NO</label>
+                          </div>
+                     </div>
+
+
+
+                    <div class="col">
+                        <label for="td" class="form-label">¿Te sientes motivado a la hora de estudiar?</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="pregunta14" value="SI" required checked>
+                            <label class="form-check-label" for="radio1">SI</label>
+                          </div>
+
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="pregunta14" value="NO" required>
+                            <label class="form-check-label" for="radio2">NO</label>
+                          </div>
+                     </div>
+
+                   <div class="col">
+                    <label for="td" class="form-label">¿Te sientes motivado a la hora de estudiar?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta15" value="1" required checked>
+                        <label class="form-check-label" for="radio1">1</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta15" value="2" required>
+                        <label class="form-check-label" for="radio2">2</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta15" value="3" required>
+                        <label class="form-check-label" for="radio2">3</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta15" value="4" required>
+                        <label class="form-check-label" for="radio2">4</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta15" value="5" required>
+                        <label class="form-check-label" for="radio2">5</label>
+                      </div>
+                 </div>
+
+
+                <div class="col">
+                    <label for="td" class="form-label">¿Cuáles fueron los motivos por los que elegiste estudiar en UniEm?</label>
+                    <select  class="btn btn-outline-warning" required class="form-select" name="pregunta16" >
+                        <option value="Valor matricula">Valor matricula</option>
+                        <option value="Recomendación de un familiar/amigo">Recomendación de un familiar/amigo</option>
+                        <option value="Por las instalaciones">Por las instalaciones</option>
+                        <option value="Tiempo que dura la carrera">Tiempo que dura la carrera</option>
+                        <option value="Por la cercanía a mi casa">Por la cercanía a mi casa</option>
+                        <option value="Nivel académico">Nivel académico</option>
+                        <option value="Practicas Emes">Practicas Emes</option>
+                        <option value="Reconocimiento">Reconocimiento</option>
+                      </select>
+                </div><br>
+
+                <div class="col">
+                    <label for="td" class="form-label">¿Cuáles  de las siguientes redes sociales usas para recibir información sobre UniEm?</label>
+                    <select class="btn btn-outline-warning" required class="form-select" name="pregunta17">
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Youtube">Youtube</option>
+                        <option value="Correo electrónico">Correo electrónico</option>
+                        <option value="Ninguna">Ninguna</option>
+                      </select>
+                </div><br>
+
+
+                <div class="col">
+                    <label for="td" class="form-label">¿Qué crees que destaca a UniEm?</label>
+                    <select  class="btn btn-outline-warning" required class="form-select" name="pregunta18">
+                        <option value="Valor matrícula">Valor matrícula</option>
+                        <option value="Tiempo que dura la carrera">Tiempo que dura la carrera</option>
+                        <option value="Instalaciones">Instalaciones</option>
+                        <option value="Nivel A">Nivel A</option>
+                        <option value="Prácticas Emes">Prácticas Emes</option>
+                        <option value="Reconocimiento">Reconocimiento</option>
+                      </select>
+                </div><br>
+            </article>
+            <article>
+                <h2>Institucional</h2><hr>
+                <label for="">¿Qué tan a gusto te encuentras hasta el momento con  la atención recibida en Uniempresarial en cuanto a los siguientes aspectos?</label><br><br>
+                <div class="col">
+                    <label for="td" class="form-label">Amabilidad y calidez</label>
+                    <select class="btn btn-outline-secondary" required class="form-select" name="pregunta19">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </div><br>
+                <div>
+                <label for="td" class="form-label">Resolución de problemas</label>
+                    <select class="btn btn-outline-secondary" required class="form-select" name="pregunta20">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </div><br>
+                <div>
+                <label for="td" class="form-label">Información oportuna y completa</label>
+                    <select class="btn btn-outline-secondary" required class="form-select" name="pregunta21">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </div><br>
+                
+                <div>
+                <label for="td" class="form-label">Empatía ( Comprende mi situación y busca ayudarme)</label>
+                    <select class="btn btn-outline-secondary" required class="form-select" name="pregunta22">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </div><br>
+                <div class="col">
+                    <label for="td" class="form-label">¿En anteriores procesos educativos recibiste apoyo académico adicional al ofrecido por la institución?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta23" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta23" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
+
             
-        </ul>
-    </nav>
-</header>
+                <div class="col">
+                    <label for="td" class="form-label">¿Te encuentras interesado en recibir apoyo académico adicional  como tutorías o asesorías por parte de los docentes o  directores del programa?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta24" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta24" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
 
-<div class="contenedor">
-    <article>
-        <h2>Economico</h2><hr>
-<form action="" class="formulario"></form>
-    <div class="col">
-        <label for="td" class="form-label">¿Alguién depende económicamente de ti?</label>
-        <div class="form-check">
-            <input type="radio"  required  class="form-check-input" id="radio1" name="pregunta34" value="SI" checked>
-            <label class="form-check-label" for="radio1">SI</label>
-      </div>
-      <div class="form-check">
-        <input type="radio"  required class="form-check-input" id="radio2" name="pregunta34" value="NO">
-        <label class="form-check-label" for="radio2">NO</label>
-      </div>
-    </div> 
-
-    <div class="row">
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="¿Cuántas personas dependen de ti?">¿Cuántas personas dependen de ti?</label>
-            <select  required class="form-select" name="pregunta35">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">+4</option>
-                    <option value="5">N/A</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="col">
-        <label for="td" class="form-label">¿Consideras que tus ingresos son suficientes y estables?</label>
-        <div class="form-check">
-            <input type="radio"  required  class="form-check-input" id="radio1" name="pregunta36" value="SI" checked>
-            <label class="form-check-label" for="radio1">SI</label>
-      </div>
-      <div class="form-check">
-        <input type="radio"  required class="form-check-input" id="radio2" name="pregunta36" value="NO">
-        <label class="form-check-label" for="radio2">NO</label>
-      </div>
-    </div> 
-    </article>
-    
-    <article>
-        <h3>Autoconocimiento</h3><hr>
-
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Tengo con quien hablar de las cosas que son importantes">Tengo con quien hablar de las cosas que son importantes</label>
-            <select  required class="form-select" name="pregunta37">
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Doy y recibo cariño">Doy y recibo cariño</label>
-            <select  required class="form-select" name="pregunta38">
-               
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Realizo actividad física (caminar, subir escaleras...)">Realizo actividad física (caminar, subir escaleras...)</label>
-            <select  required class="form-select" name="pregunta39">
                 
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Mi alimentación es balanceada">Mi alimentación es balanceada</label>
-            <select  required class="form-select" name="pregunta40">
-                
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Duermo bien y me siento descansado">Duermo bien y me siento descansado</label>
-            <select  required class="form-select" name="pregunta41">
-                
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Me siento capaz de manejar el estrés o tensión  en mi vida">Me siento capaz de manejar el estrés o tensión  en mi vida</label>
-            <select  required class="form-select" name="pregunta42">
-              
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Me relajo y disfruto de mi tiempo libre">Me relajo y disfruto de mi tiempo libre</label>
-            <select  required class="form-select" name="pregunta43">
-               
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Soy un pensador positivo y optimista">Soy un pensador positivo y optimista</label>
-            <select  required class="form-select" name="pregunta44">
-                
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Me siento tenso">Me siento tenso</label>
-            <select  required class="form-select" name="pregunta45">
-                
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Me siento deprimido o triste">Me siento deprimido o triste</label>
-            <select  required class="form-select" name="pregunta46">
-                
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Me siento satisfecho con mi trabajo o actividades">Me siento satisfecho con mi trabajo o actividades</label>
-            <select  required class="form-select" name="pregunta47">
-                
-                <option value="Casi siempre">Casi siempre</option>
-                <option value="A veces">A veces</option>
-                <option value="Casi nunca">Casi nunca</option>
-            </select>
-        </div>
-        <div class="col">
-            <label for="td" class="form-label"></label>
-            <label value="Hago ejercicio de forma activa al menos 20 minutos (correr, montar en bicicleta, zumba,...)">Hago ejercicio de forma activa al menos 20 minutos (correr, montar en bicicleta, zumba,...)</label>
-            <select  required class="form-select" name="pregunta48">
-               
-                <option value="4 o más veces por semana">4 o más veces por semana</option>
-                <option value="1 a 3 veces por semana">1 a 3 veces por semana</option>
-                <option value="Menos de una vez por semana">Menos de una vez por semana</option>
-            </select>
-        </div>
+                <div class="col">
+                    <label for="td" class="form-label">¿Consideras que los recursos físicos , las instalaciones y herramientas tecnológicas de UniEm son adecuadas para tu formación profesional? </label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta25" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
 
-        </article>
- </form>
- <article class="Diseño">
- 
-    <a href="index.html">
-    <button>
-        
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        1
-    </button>
-    </a>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta25" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
 
-    <a href="page1.html">
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        2
-    </button>
-    </a>
+                
+                <div class="col">
+                    <label for="td" class="form-label">¿Sabias que Uniempresarial cuenta con opciones de financiamiento?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta26" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
 
-    <a href="page2.html">
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        3
-    </button>
-    </a>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta26" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
 
-        <a href="page3.html">
-        <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        4
-    </button>
-    </a>
-    <a href="page4.html">
-    
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        5
-    </button>
-    </a>
-    <a href="page5.html">
-    
-        <button>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            6
-        </button>
-        </a>
- 
-</article>
+                
+                <div class="col">
+                    <label for="td" class="form-label">¿Te encuentras trabajando?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta27" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
 
-<br><br>
-</div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta27" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
+                <div class="col">
+                    <label for="td" class="form-label"> ¿Dependes económicamente de otra persona?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta28" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta28" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
+                 <div class="col">
+                    <label for="td" class="form-label"> ¿Consideras que los recursos  de quien dependes económicamente son suficientes y estables?</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="pregunta29" value="SI" required checked>
+                        <label class="form-check-label" for="radio1">SI</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="pregunta29" value="NO" required>
+                        <label class="form-check-label" for="radio2">NO</label>
+                      </div>
+                 </div>
+                 <div>
+                    <label for="td" class="form-label">¿En qué tipo de vivienda habitas?</label>
+                        <select class="btn btn-outline-secondary" required class="form-select" name="pregunta30">
+                            <option value="Propia">Propia</option>
+                            <option value="Arriendo">Arriendo</option>
+                            <option value="Familiar">Familiar</option>
+                          </select>
+                    </div><br>
+                    <div class="col">
+                        <label for="td" class="form-label">Indica de quién dependes económicamente</label>
+                        <select class="btn btn-outline-secondary" required class="form-select" name="pregunta31">
+                            <option value="Abuelos">Abuelos</option>
+                            <option value="Hermanos">Hermanos</option>
+                            <option value="Padre y/o Madre">Padre y/o Madre</option>
+                            <option value="Pareja">Pareja</option>
+                            <option value="tios">tios</option>
+                            <option value="Otro">Otro</option>
+                          </select>
+                    </div><br>
+                    <div class="col">
+                        <label for="td" class="form-label">¿Cuál de los siguientes miembros de tu familia ha logrado acceder* a una formación académico universitaria?</label>
+                        <select class="btn btn-outline-secondary" required class="form-select" name="pregunta32">
+                            <option value="Padre">Padre</option>
+                            <option value="Madre">Madre</option>
+                            <option value="Hermanos">Hermanos</option>
+                            <option value="Abuelo">Abuelo</option>
+                            <option value="Abuela">Abuela</option>
+                            <option value="Ninguno">Ninguno</option>
+                          </select>
+                    </div><br>
+                    <div class="col">
+                        <label for="td" class="form-label">El nivel educativo de tu padre es:</label>
+                        <select class="btn btn-outline-secondary" required class="form-select" name="pregunta33">
+                            <option value="Primaria">Primaria</option>
+                            <option value="Secundaria">Secundaria</option>
+                            <option value="Tecnico">Tecnico</option>
+                            <option value="Tecnologo">Tecnologo</option>
+                            <option value="Universitario">Universitario</option>
+                            <option value="No aplica">No aplica</option>
+                          </select>
+                    </div><br>
+                    <center><button type="submit" class="btn btn-primary">Siguiente Pagina <i class="fa fa-angle-right"></i></button> </center>
+            </article>
+       
+
+    </form>
+
+    <br><br>
+    <script src="../Script/Validaciones.js"></script>
+
 </body>
 </html>
