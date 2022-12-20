@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="../Formulario/assets/img/logoFaticon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Formulario Uniempresarial</title>
 </head>
 <body class="fondo">
@@ -24,7 +25,6 @@
         </a>
         <ul>
             <li><a class="active" href="#">Formulario General de ingreso</a></li>
-            
         </ul>
     </nav>
 </header>
@@ -34,42 +34,38 @@
         <h2>Datos basicos</h2><hr>
         <div class="row">
             <div class="col">
-                <label for="name" class="form-label">Nombre Completo:</label>
-              <input type="text"  required class="form-control" placeholder="Ingrese nombre completo" name="nombre">
+                <label  for="name" class="form-label">Nombre Completo:</label>
+              <input   type="text" class="btn btn" required class="form-control" placeholder="Ingrese nombre completo" name="nombre">
             </div>
             <div class="col">
-                <label for="td" class="form-label">Tipo de Documento:</label>
+                <label for="td"  class="form-label">Tipo de Documento:</label>
                 <div class="form-check">
-                    <input type="radio"  required  class="form-check-input" id="radio1" name="td" value="TI" checked>
-                    <label class="form-check-label" for="radio1">TI</label>
+                    <input  type="radio"  required  class="form-check-input" id="radio1" name="td" value="TI" checked>
+                    <label  class="form-check-label" for="radio1">TI</label>
                   </div>
-
                   <div class="form-check">
-                    <input type="radio"  required class="form-check-input" id="radio2" name="td" value="CC">
+                    <input type="radio" required class="form-check-input" id="radio2" name="td" value="CC">
                     <label class="form-check-label" for="radio2">CC</label>
                   </div>
-
                   <div class="form-check">
                     <input type="radio"  required  class="form-check-input" id="radio2" name="td" value="TE">
                     <label class="form-check-label" for="radio2">TE</label>
                   </div>
                   <div class="form-check">
                     <input type="radio"  required class="form-check-input" id="radio2" name="td" value="CE">
-                    <label class="form-check-label" for="radio2">CE</label>
+                    <label  class="form-check-label" for="radio2">CE</label>
                   </div>
-            
             </div>
         </div>
-        
+        <br>
       <div class="row">
         <div class="col">
             <label for="td" class="form-label">Numero de documento:</label>
-            <input type="number"  required class="form-control" placeholder="Ingrese numero celular" name="documento">
+            <input  type="number" required class="form-control" placeholder="Ingrese numero de documento" name="documento">
         </div>
             <div class="col">
                 <label for="td" class="form-label">Seleccione su programa inscrito:</label>
                 <select  required class="form-select" name="programa">
-                    <option value=""></option>
                     <option value="FINANZAS Y COMERCIO EXTERIOR">FINANZAS Y COMERCIO EXTERIOR</option>
                     <option value="INGENIERIA DE SOFTWARE">INGENIERIA DE SOFTWARE</option>
                     <option value="INGENIERIA INDUSTRIAL">INGENIERIA INDUSTRIAL</option>
@@ -78,14 +74,15 @@
                   </select>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col">
-                <label for="name" class="form-label">Correo Electrónico:</label>
+              <label for="name" class="form-label">Correo Electrónico:</label>
               <input type="email"  required class="form-control" placeholder="Ingrese email" name="email">
             </div>
             <div class="col">
-                <label for="td" class="form-label">Numero Celular:</label>
-                <input type="number"  required class="form-control" placeholder="Ingrese numero celular" name="celular">
+                <label  for="td" class="form-label">Numero Celular:</label>
+                <input  type="number"  required class="form-control" placeholder="Ingrese numero celular" name="celular">
             </div>
         </div>
     </article>
@@ -93,9 +90,8 @@
         <h3>Residencia</h3><hr>
         <div class="row">
             <div class="col">
-                <label for="estrato" class="form-label">Estracto Socio Economico: </label>
-                <select  required class="form-select" name="pregunta1">
-                    <option value=""></option>
+                <label for="estrato"  class="form-label">Estrato Socio Economico: </label>
+                <select class="btn btn-outline-info" required class="form-select" name="pregunta1">
                     <option value="Estrato 1">Estrato 1</option>
                     <option value="Estrato 2">Estrato 2</option>
                     <option value="Estrato 3">Estrato 3</option>
@@ -105,23 +101,21 @@
                   </select>
             </div>
         </div>
-
+        <br>
         <div class="row">
             <div class="col">
                 <label for="residencia" class="form-label">Lugar de residencia: </label>
-                <select  required class="form-select" name="pregunta2" >
-                    <option value=""></option>
+                <select class="btn btn-outline-info"  required class="form-select" name="pregunta2" >
                     <option value="Bogota D.C">Bogota D.C</option>
                     <option value="Otro">Otro</option>
                   </select>
             </div>
         </div>
-
+        <br>
         <div class="row">
             <div class="col">
                 <label for="localidad" class="form-label">Localidad de residencia: </label>
-                <select  required  class="form-select" name="pregunta3">
-                    <option value=""></option>
+                <select class="btn btn-outline-info" required  class="form-select" name="pregunta3">
                     <option value="Usaquén">Usaquén</option>
                     <option value="Chapinero">Chapinero</option>
                     <option value="Santa Fe">Santa Fe</option>
@@ -151,20 +145,19 @@
         <div class="row">
             <div class="col">
                 <label for="edad" class="form-label">¿Que edad tienes?</label>
-                <select  required class="form-select" name="pregunta4">
-                    <option value=""></option>
+                <select class="btn btn-outline-dark" required class="form-select" name="pregunta4">
                     <option value="Menor de 18">Menor de 18</option>
                     <option value="18 a 25">18 a 25</option>
                     <option value="26 a 35">26 a 35</option>
                     <option value="36 o mas">36 o mas</option>
-                  </select>
+                </select>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col">
                 <label for="estado_civil" class="form-label">Estado civil</label>
-                <select  required class="form-select" name="pregunta5">
-                    <option value=""></option>
+                <select class="btn btn-outline-dark" required class="form-select" name="pregunta5">
                     <option value="Soltero">Soltero</option>
                     <option value="Casado(a)">Casado(a)</option>
                     <option value="Separado(a)-Divorciado(a)">Separado(a)-Divorciado(a)</option>
@@ -173,27 +166,28 @@
                   </select>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col">
                 <label for="contacto_emergencia" class="form-label">Parentesco contacto de emergencia</label>
-                <select  required class="form-select" name="parentesco_emergencia">
-                    <option value=""></option>
-                    <option value="">Padres</option>
-                    <option value="">Esposo(a)</option>
-                    <option value="">Hermano(a)</option>
-                    <option value="">Hijo(a)</option>
-                    <option value="">Abuelo(a)</option>
-                    <option value="">Tío(a)</option>
-                    <option value="">Amigo(a)</option>
-                    <option value="">Otros</option>
-                    <option value="">No tengo contacto de emergencia</option>
+                <select class="btn btn-outline-dark" required class="form-select" name="parentesco_emergencia">
+                    <option value="Padres">Padres</option>
+                    <option value="Esposo(a)">Esposo(a)</option>
+                    <option value="Hermano(a)">Hermano(a)</option>
+                    <option value="Hijo(a)">Hijo(a)</option>
+                    <option value="Abuelo(a)">Abuelo(a)</option>
+                    <option value="Tío(a)">Tío(a)</option>
+                    <option value="Amigo(a)">Amigo(a)</option>
+                    <option value="Otros">Otros</option>
+                    <option value="No tengo contacto de emergencia">No tengo contacto de emergencia</option>
                   </select>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col">
                 <label for="nombre_emergencia" class="form-label">Nombre y apellidos de contacto de emergencia: </label>
-              <input type="text"  required  class="form-control" placeholder="Ingrese nombre del contacto" name="nombre_emergencia">
+              <input  type="text"  required  class="form-control" placeholder="Ingrese nombre del contacto" name="nombre_emergencia">
             </div>
             <div class="col">
                 <label for="numero_emergencia" class="form-label">Número celular del contacto de emergencia: </label>
@@ -218,8 +212,7 @@
         <div class="row">
             <div class="col">
                 <label for="motivo" class="form-label">¿Cuál fue el motivo por el cual no iniciaste tu carrera inmediatamente despues de finalizar el colegio?</label>
-                <select  required class="form-select" name="pregunta7">
-                    <option value=""></option>
+                <select class="btn btn-outline-warning" required class="form-select" name="pregunta7">
                     <option value="Comence a trabajar">Comence a trabajar </option>
                     <option value="Falta de recursos económicos">Falta de recursos económicos</option>
                     <option value="Me tomo tiempo pensar y decidir mi carrera"> Me tomo tiempo pensar y decidir mi carrera</option>
@@ -233,11 +226,10 @@
         </div>
         <div class="row">
             <div class="col">
-                <label for="rendimiento" class="form-label">Consideras que tu rendimiento académico en anteriores experiencias académicas ha sido:</label>
-                <select  required class="form-select" name="pregunta8">
-                    <option value=""></option>
+                <label for="rendimiento" class="form-label">Consideras que tu rendimiento académico en anteriores experiencias académicas ha sido:</label><br>
+                <select class="btn btn-outline-warning" required class="form-select" name="pregunta8">
                     <option value="Muy malo">Muy malo</option>
-                    <option value="malo">malo</option>
+                    <option value="Malo">malo</option>
                     <option value="Regular">Regular</option>
                     <option value="Bueno">Bueno</option>
                     <option value="Muy Bueno">Muy Bueno</option>  
@@ -247,120 +239,34 @@
         <div class="col">
             <label for="td" class="form-label">¿Haz realizado prácticas empresariales anteriormente?</label>
             <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta9" value="option1" checked>Si
+                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta9" value="Si" checked>Si
                 <label class="form-check-label" for="radio1"></label>
               </div>
 
               <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta9" value="option2">No
+                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta9" value="No">No
                 <label class="form-check-label" for="radio2"></label>
               </div>
         </div>
         <div class="col">
             <label for="td" class="form-label">¿Tienes un lugar determinado para estudiar?</label>
             <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta10" value="option1" checked>Si
+                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta10" value="Si" checked>Si
                 <label class="form-check-label" for="radio1"></label>
               </div>
 
               <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta10" value="option2">No
+                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta10" value="No">No
                 <label class="form-check-label" for="radio2"></label>
               </div>
-        </div><br>
-        <center><button type="submit" class="btn btn-primary">Siguiente</button></center>
+        </div>
+        <br>
+        <center><button type="submit" class="btn btn-primary">Siguiente Pagina <i class="fa fa-angle-right"></i></button> </center>
     </article>
-
-    <!-- <button id="btn" type="submit" class="enviar" onclick="alertar(`Felicidades has completado todo el formulario con éxito`)">Enviar respuestas</button>
-    <button id="btn2" type="submit" class="enviar" > Siguiente pagina</button>
-    <script type="text/javascript">
-            function alertar(texto) {
-            alert(texto);
-            }
-    </script>
-    <script>
-        location.href="Page2.html"
-    </script>
-
-    <script type="text/javascript"charset="utf-8" >
-            var btn = document.getElementById('btn');
-            var btn2 = document.getElementById('btn2');
-    btn.addEventListener('click', e=>{btn2.style='visibility:visible;'},'click',);
-
-    </script> -->
-    
-    
-
       </form>
     </article>
  </form>
-<article class="Diseño">
- 
-    <a href="index.html">
-    <button>
-        
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        1
-    </button>
-    </a>
-
-    <a href="page1.html">
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        2
-    </button>
-    </a>
-
-    <a href="page2.html">
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        3
-    </button>
-    </a>
-
-    <a href="page3.html"></a>
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        4
-    </button>
-    </a>
-    <a href="page4.html">
-    
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        5
-    </button>
-    </a>
-    <a href="page5.html">
-    
-        <button>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            6
-        </button>
-        </a>
- 
-</article>
-
 <br><br>
-
 </div>
    <footer>
         <p class="datos" >TRATAMIENTO DE DATOS PERSONALES: 
