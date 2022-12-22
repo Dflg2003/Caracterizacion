@@ -28,7 +28,7 @@ echo $sql;
 $consulta = mysqli_query($con, $sql);
 
 if ($consulta > 0) {
-    header("Location: page5.php?documento=$documento"   );
+    header("Location: page6.php?documento=$documento"   );
 }
 
 ?>
