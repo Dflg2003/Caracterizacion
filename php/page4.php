@@ -25,14 +25,15 @@ echo $documento;
 
 //esto no es un update si no un insert into respuestas
 
+$sql = "INSERT INTO respuestas (pregunta34, pregunta35, pregunta36, pregunta37, pregunta38, pregunta39, pregunta40, pregunta41, pregunta42, pregunta43, pregunta44, pregunta45 pregunta46, pregunta47, pregunta48) VALUES ('$pregunta34', '$pregunta35', '$pregunta36', '$pregunta37', '$pregunta38', '$pregunta39', '$pregunta40', '$pregunta41', '$pregunta42', '$pregunta43', '$pregunta44', '$pregunta45' '$pregunta46', '$pregunta47', '$pregunta48');"
 //recuerden que el campo id_user sera el documento de identidad
-$sql = "UPDATE respuestas SET pregunta34 = '$pregunta34', pregunta35 = '$pregunta35', pregunta36 = '$pregunta36', pregunta37 = '$pregunta37', pregunta38 = '$pregunta38', pregunta39 = '$pregunta39', pregunta40 = '$pregunta40', pregunta41 = '$pregunta41', pregunta42 = '$pregunta42', pregunta43 = '$pregunta43', pregunta44 = '$pregunta44', pregunta45 = '$pregunta45', pregunta46 = '$pregunta46', pregunta47 = '$pregunta47', pregunta48 = '$pregunta48', WHERE documento = '$documento'";
+
 
 echo $sql;
 $consulta = mysqli_query($con, $sql);
 
 if ($consulta > 0) {
-    header("Location: page6.php?documento=$documento"   );
+    header("Location: page5.php?documento=$documento"   );
 }
 
 ?>
