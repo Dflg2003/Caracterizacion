@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/Slider.css">
-    <link rel="stylesheet" href="./Style/menu.css">
-    <link rel="stylesheet" href="./Style/parallax.css">
+    <link rel="stylesheet" href="../Style/Slider.css">
+    <link rel="stylesheet" href="../Style/menu.css">
+    <link rel="stylesheet" href="../Style/parallax.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Page3</title>
@@ -28,7 +28,7 @@
 </header>
     <div class="contenedor">
         <article>
-            <form action="/action_page6.php" class="formulario"  id="validationForm" name="validationForm">
+            <form action="page7.php" class="formulario"  id="validationForm" name="validationForm" method="POST">
             <p>
             <h2>Autoconocimiento</h2><hr>
            
@@ -260,81 +260,11 @@
                 <option value="Raramente">Raramente</option>
                 <option value="5Nunca">Nunca</option>
             </select><br><br>
+            <center><button type="submit" class="btn btn-primary">Siguiente Pagina <i class="fa fa-angle-right"></i></button> </center>
 </p> 
         </article>
        
  </form> 
- <article class="Diseño">
- 
-    <a href="index.html">
-    <button>
-        
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        1
-    </button>
-    </a>
-
-    <a href="page1.html">
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        2
-    </button>
-    </a>
-
-    <a href="page2.html">
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        3
-    </button>
-    </a>
-
-    
-        <a href="page3.html"><button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        4
-    </button>
-    </a>
-
-    <a href="page4.html">
-    <button>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        5
-    </button>
-    </a>
-    <a href="page5.html">
-        <button>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            6
-        </button>
-        </a>
-    
-    
-</article>
-<article>
-    <button type="submit" class="enviar"  onclick="verificar()">Enviar</button>
-</article>
-
-
-     
-  
     </div>
     <script src="./Script/Validaciones.js"></script>
 </body>

@@ -25,7 +25,7 @@ $pregunta93 = $_POST['pregunta93'];
 $pregunta94 = $_POST['pregunta94'];
 
 
-$sql = "INSERT INTO page4 ( pregunta75, pregunta76, pregunta77, pregunta78, pregunta79, pregunta80, pregunta81, pregunta82, pregunta83, pregunta84,pregunta85, pregunta86, pregunta87, pregunta88, pregunta89, pregunta90, pregunta91, pregunta92, pregunta93, pregunta94) VALUES ('$pregunta75', '$pregunta76', '$pregunta77', '$pregunta78', '$pregunta79', '$pregunta80', '$pregunta81', '$pregunta82', '$pregunta83', '$pregunta84','$pregunta85', '$pregunta86', '$pregunta87', '$pregunta88', '$pregunta89', '$pregunta90', '$pregunta91', '$pregunta92', '$pregunta93', '$pregunta94');";
+$sql = "UPDATE respuestas SET pregunta75 = '$pregunta75', pregunta76 = '$pregunta76', pregunta77 = '$pregunta77', pregunta78 = '$pregunta78', pregunta79 = '$pregunta79', pregunta80 = '$pregunta80', pregunta81 = '$pregunta81', pregunta82 = '$pregunta82', pregunta83 = '$pregunta83', pregunta84 = '$pregunta84', pregunta85 = '$pregunta85', pregunta86 = '$pregunta86', pregunta87 = '$pregunta87', pregunta88 = '$pregunta88', pregunta89 = '$pregunta89', pregunta90 = '$pregunta90', pregunta91 = '$pregunta91', pregunta92 = '$pregunta92', pregunta93 = '$pregunta93', pregunta94 = '$pregunta94',WHERE documento = '$documento'";
 
 echo $sql;
 
