@@ -4,15 +4,16 @@ $documento = $_GET['documento'];
 
 ?>
 <!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/parallax.css">
-    <link rel="stylesheet" href="./Style/menu.css">
-    <link rel="stylesheet" href="./Style/Slider.css">
+    <link rel="stylesheet" href="../Caracterizacion/Style/parallax.css">
+    <link rel="stylesheet" href="../Caracterizacion/Style/menu.css">
+    <link rel="stylesheet" href="../Caracterizacion/Style/Slider.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -39,7 +40,7 @@ $documento = $_GET['documento'];
 <div class="contenedor">
     <article>
         <h2>Economico</h2><hr>
-<form action="/action_page4.php" class="formulario"></form>
+<form action="page4.php" class="formulario" method="POST" >
     <div class="col">
         <label for="td" class="form-label">¿Alguién depende económicamente de ti?</label>
         <div class="form-check">

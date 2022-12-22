@@ -22,7 +22,7 @@ $pregunta48 = $_POST['pregunta48'];
 
 echo $documento;
 
-$sql = "UPDATE datos_personales SET pregunta34 = '$pregunta34', pregunta35 = '$pregunta35', pregunta36 = '$pregunta36', pregunta37 = '$pregunta37', pregunta38 = '$pregunta38', pregunta39 = '$pregunta39', pregunta40 = '$pregunta40', pregunta41 = '$pregunta41', pregunta42 = '$pregunta42', pregunta43 = '$pregunta43', pregunta44 = '$pregunta44', pregunta45 = '$pregunta45', pregunta46 = '$pregunta46', pregunta47 = '$pregunta47', pregunta48 = '$pregunta48', WHERE documento = '$documento'";
+$sql = "UPDATE respuestas SET pregunta34 = '$pregunta34', pregunta35 = '$pregunta35', pregunta36 = '$pregunta36', pregunta37 = '$pregunta37', pregunta38 = '$pregunta38', pregunta39 = '$pregunta39', pregunta40 = '$pregunta40', pregunta41 = '$pregunta41', pregunta42 = '$pregunta42', pregunta43 = '$pregunta43', pregunta44 = '$pregunta44', pregunta45 = '$pregunta45', pregunta46 = '$pregunta46', pregunta47 = '$pregunta47', pregunta48 = '$pregunta48', WHERE documento = '$documento'";
 
 echo $sql;
 $consulta = mysqli_query($con, $sql);
