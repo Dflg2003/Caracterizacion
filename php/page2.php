@@ -29,7 +29,7 @@ $pregunta33 = $_POST['pregunta33'];
 
 echo $documento;
 
-$sql = "UPDATE datos_personales SET pregunta11 = '$pregunta11', pregunta12 = '$pregunta12', pregunta13 = '$pregunta13', pregunta14 = '$pregunta14', pregunta15 = '$pregunta15', pregunta16 = '$pregunta16', pregunta17 = '$pregunta17', pregunta18 = '$pregunta18', pregunta19 = '$pregunta19', pregunta20 = '$pregunta20', pregunta21 = '$pregunta21', pregunta22 = '$pregunta22', pregunta23 = '$pregunta23', pregunta24 = '$pregunta24', pregunta25 = '$pregunta25', pregunta26 = '$pregunta26', pregunta27 = '$pregunta27', pregunta28 = '$pregunta28', pregunta29 = '$pregunta29', pregunta30 = '$pregunta30', pregunta31 = '$pregunta31', pregunta32 = '$pregunta32', pregunta33 = '$pregunta33' WHERE documento = '$documento'";
+$sql = "UPDATE datos_personales SET pregunta11 = '$pregunta11', pregunta12 = '$pregunta12', pregunta13 = '$pregunta13', pregunta14 = '$pregunta14', pregunta15 = '$pregunta15', pregunta16 = '$pregunta16', pregunta17 = '$pregunta17', pregunta18 = '$pregunta18', pregunta19 = '$pregunta19', pregunta20 = '$pregunta20', pregunta21 = '$pregunta21', pregunta22 = '$pregunta22', pregunta23 = '$pregunta23', pregunta24 = '$pregunta24', pregunta25 = '$pregunta25', pregunta26 = '$pregunta26', pregunta27 = '$pregunta27', pregunta28 = '$pregunta28', pregunta29 = '$pregunta29', pregunta30 = '$pregunta30', pregunta31 = '$pregunta31', pregunta32 = '$pregunta32', pregunta33 = '$pregunta33' WHERE id_user = '$id_user'";
 
 echo $sql;
 $consulta = mysqli_query($con, $sql);
