@@ -32,7 +32,7 @@ $pregunta74 = $_POST['pregunta74'];
 
 echo $documento;
 
-$sql = "UPDATE respuestas SET pregunta49 = '$pregunta49', pregunta50 = '$pregunta50', pregunta51 = '$pregunta51', pregunta52 = '$pregunta52', pregunta53 = '$pregunta53', pregunta54 = '$pregunta54', pregunta55 = '$pregunta55', pregunta56 = '$pregunta56', pregunta57 = '$pregunta57', pregunta58 = '$pregunta58', pregunta59 = '$pregunta59', pregunta60 = '$pregunta60', pregunta61 = '$pregunta61', pregunta62 = '$pregunta62', pregunta63 = '$pregunta63', pregunta64 = '$pregunta64', pregunta65 = '$pregunta65', pregunta66 = '$pregunta66', pregunta67 = '$pregunta67', pregunta68 = '$pregunta68', pregunta69 = '$pregunta69', pregunta70 = '$pregunta70', pregunta71 = '$pregunta71', pregunta72 = '$pregunta72', pregunta73 = '$pregunta73', pregunta74 = '$pregunta74' WHERE documento = '$documento'";
+$sql = "UPDATE respuestas SET pregunta49 = '$pregunta49', pregunta50 = '$pregunta50', pregunta51 = '$pregunta51', pregunta52 = '$pregunta52', pregunta53 = '$pregunta53', pregunta54 = '$pregunta54', pregunta55 = '$pregunta55', pregunta56 = '$pregunta56', pregunta57 = '$pregunta57', pregunta58 = '$pregunta58', pregunta59 = '$pregunta59', pregunta60 = '$pregunta60', pregunta61 = '$pregunta61', pregunta62 = '$pregunta62', pregunta63 = '$pregunta63', pregunta64 = '$pregunta64', pregunta65 = '$pregunta65', pregunta66 = '$pregunta66', pregunta67 = '$pregunta67', pregunta68 = '$pregunta68', pregunta69 = '$pregunta69', pregunta70 = '$pregunta70', pregunta71 = '$pregunta71', pregunta72 = '$pregunta72', pregunta73 = '$pregunta73', pregunta74 = '$pregunta74' WHERE documento = '$id_user'";
 
 echo $sql;
 $consulta = mysqli_query($con, $sql);
