@@ -40,7 +40,7 @@ $documento = $_GET['documento'];
 <div class="contenedor">
     <article>
         <h2>Economico</h2><hr>
-<form action="page4.php" class="formulario" method="POST" >
+<form action="page4.php" class="formulario" method="POST">
     <div class="col">
         <label for="td" class="form-label">¿Alguién depende económicamente de ti?</label>
         <div class="form-check">
@@ -202,10 +202,10 @@ $documento = $_GET['documento'];
                 <option value="Menos de una vez por semana">Menos de una vez por semana</option>
             </select>
         </div>
-
+        <center><button type="submit" class="btn btn-primary">Siguiente Pagina <i class="fa fa-angle-right"></i></button> </center>
         </article>
  </form>
- <article class="Diseño">
+ <!-- <article class="Diseño">
  
     <a href="index.html">
     <button>
@@ -268,7 +268,7 @@ $documento = $_GET['documento'];
         </button>
         </a>
  
-</article>
+</article> -->
 
 <br><br>
 </div>
