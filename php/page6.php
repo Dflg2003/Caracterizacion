@@ -37,7 +37,7 @@ $documento = $_GET['documento'];
         <form action="page7.php" class="formulario" method="POST">
         <div class="col">
 <?php
-echo "<input type='hidden' name='documento' value='$documento'>";
+echo "<input type='hidden' name='documento' value='$id_user'>";
 ?>
         <div class="col">
             
