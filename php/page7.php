@@ -2,7 +2,6 @@
 
 include 'conexion.php';
 
-$documento = $_POST['documento'];
 $pregunta49 = $_POST['pregunta49'];
 $pregunta50 = $_POST['pregunta50'];
 $pregunta51 = $_POST['pregunta51'];
