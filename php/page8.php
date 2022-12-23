@@ -106,7 +106,7 @@ echo "<input type='hidden' name='documento' value='$documento'>";
         <br>
         <div class="botones">
         <label for="sustancias" class="form-label">Cigarrillo: </label>
-        <select class="btn btn-outline-dark" class="form-select" name="pregunta80"  required>
+        <select class="btn btn-outline-dark" class="form-select" name="pregunta81"  required>
             <option value=""></option>
             <option value="Nunca">Nunca</option>
             <option value="Esporádicamente">Esporádicamente</option>
