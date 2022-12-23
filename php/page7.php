@@ -2,7 +2,7 @@
 
 include 'conexion.php';
 
-$documento = $_POST['documento'];
+$id_user = $_POST['id_user'];
 $pregunta49 = $_POST['pregunta49'];
 $pregunta50 = $_POST['pregunta50'];
 $pregunta51 = $_POST['pregunta51'];
@@ -30,16 +30,16 @@ $pregunta72 = $_POST['pregunta72'];
 $pregunta73 = $_POST['pregunta73'];
 $pregunta74 = $_POST['pregunta74'];
 
-echo $documento;
+echo $id_user;
 
-$sql = "UPDATE respuestas SET pregunta49 = '$pregunta49', pregunta50 = '$pregunta50', pregunta51 = '$pregunta51', pregunta52 = '$pregunta52', pregunta53 = '$pregunta53', pregunta54 = '$pregunta54', pregunta55 = '$pregunta55', pregunta56 = '$pregunta56', pregunta57 = '$pregunta57', pregunta58 = '$pregunta58', pregunta59 = '$pregunta59', pregunta60 = '$pregunta60', pregunta61 = '$pregunta61', pregunta62 = '$pregunta62', pregunta63 = '$pregunta63', pregunta64 = '$pregunta64', pregunta65 = '$pregunta65', pregunta66 = '$pregunta66', pregunta67 = '$pregunta67', pregunta68 = '$pregunta68', pregunta69 = '$pregunta69', pregunta70 = '$pregunta70', pregunta71 = '$pregunta71', pregunta72 = '$pregunta72', pregunta73 = '$pregunta73', pregunta74 = '$pregunta74', WHERE documento = '$documento'";
+$sql = "UPDATE respuestas SET pregunta49 = '$pregunta49', pregunta50 = '$pregunta50', pregunta51 = '$pregunta51', pregunta52 = '$pregunta52', pregunta53 = '$pregunta53', pregunta54 = '$pregunta54', pregunta55 = '$pregunta55', pregunta56 = '$pregunta56', pregunta57 = '$pregunta57', pregunta58 = '$pregunta58', pregunta59 = '$pregunta59', pregunta60 = '$pregunta60', pregunta61 = '$pregunta61', pregunta62 = '$pregunta62', pregunta63 = '$pregunta63', pregunta64 = '$pregunta64', pregunta65 = '$pregunta65', pregunta66 = '$pregunta66', pregunta67 = '$pregunta67', pregunta68 = '$pregunta68', pregunta69 = '$pregunta69', pregunta70 = '$pregunta70', pregunta71 = '$pregunta71', pregunta72 = '$pregunta72', pregunta73 = '$pregunta73', pregunta74 = '$pregunta74' WHERE id_user = '$id_user'";
 
 echo $sql;
 $consulta = mysqli_query($con, $sql);
 
 if ($consulta > 0) {
     //De aca nos debe votar a la ultima del formulario no a la pagina 8
-    header("Location: page8.php?documento=$documento"   );
+    header("Location: page8.php?id_user=$id_user"   );
 }
 
 ?>
