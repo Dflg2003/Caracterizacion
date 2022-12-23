@@ -139,7 +139,9 @@ CREATE TABLE `respuestas` (
   `pregunta89` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pregunta90` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pregunta91` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `pregunta92` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+  `pregunta92` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `pregunta93` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `pregunta94` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
