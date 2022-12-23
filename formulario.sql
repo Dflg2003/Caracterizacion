@@ -35,7 +35,7 @@ CREATE TABLE `datos_personales` (
   `programa` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `celular` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `aprentesco_emergencia` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `parentesco_emergencia` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `nombre_emergencia` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `celular_emergencia` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pregunta1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,

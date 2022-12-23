@@ -4,20 +4,18 @@ $documento = $_GET['documento'];
 
 ?>
 <!DOCTYPE html>
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Caracterizacion/Style/parallax.css">
-    <link rel="stylesheet" href="../Caracterizacion/Style/menu.css">
-    <link rel="stylesheet" href="../Caracterizacion/Style/Slider.css">
+    <link rel="stylesheet" href="../Style/parallax.css">
+    <link rel="stylesheet" href="../Style/menu.css">
+    <link rel="stylesheet" href="../Style/Slider.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./">
+    <link rel="stylesheet" href="../">
     <title>page2</title>
 </head>
 <body class="fondo">
@@ -28,7 +26,7 @@ $documento = $_GET['documento'];
             <i class="fas fa-bars"></i>
         </label>
         <a href="#" class="enlace">
-            <img src="./assets/img/LogoUni.jpg" alt="" class="logo">
+            <img src="../assets/img/LogoUni.jpg" alt="" class="logo">
         </a>
         <ul>
             <li><a class="active" href="#">Formulario General de ingreso</a></li>
@@ -41,7 +39,14 @@ $documento = $_GET['documento'];
     <article>
         <h2>Economico</h2><hr>
 <form action="page4.php" class="formulario" method="POST">
+<<<<<<< HEAD
     <div class="col">
+=======
+<?php
+echo "<input type='hidden' name='documento' value='$documento'>";
+?>
+<div class="col">
+>>>>>>> 5297efb62a3d470b889116ff56b4a10109f905c7
         <label for="td" class="form-label">¿Alguién depende económicamente de ti?</label>
         <div class="form-check">
             <input type="radio"  required  class="form-check-input" id="radio1" name="pregunta34" value="SI" checked>
@@ -57,7 +62,7 @@ $documento = $_GET['documento'];
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="¿Cuántas personas dependen de ti?">¿Cuántas personas dependen de ti?</label>
-            <select  required class="form-select" name="pregunta35">
+            <select class="btn btn-outline-info"  required class="form-select" name="pregunta35">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -86,106 +91,116 @@ $documento = $_GET['documento'];
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Tengo con quien hablar de las cosas que son importantes">Tengo con quien hablar de las cosas que son importantes</label>
-            <select  required class="form-select" name="pregunta37">
+            <select class="btn btn-outline-dark"  required class="form-select" name="pregunta37">
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Doy y recibo cariño">Doy y recibo cariño</label>
-            <select  required class="form-select" name="pregunta38">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta38">
                
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Realizo actividad física (caminar, subir escaleras...)">Realizo actividad física (caminar, subir escaleras...)</label>
-            <select  required class="form-select" name="pregunta39">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta39">
                 
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Mi alimentación es balanceada">Mi alimentación es balanceada</label>
-            <select  required class="form-select" name="pregunta40">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta40">
                 
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Duermo bien y me siento descansado">Duermo bien y me siento descansado</label>
-            <select  required class="form-select" name="pregunta41">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta41">
                 
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Me siento capaz de manejar el estrés o tensión  en mi vida">Me siento capaz de manejar el estrés o tensión  en mi vida</label>
-            <select  required class="form-select" name="pregunta42">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta42">
               
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Me relajo y disfruto de mi tiempo libre">Me relajo y disfruto de mi tiempo libre</label>
-            <select  required class="form-select" name="pregunta43">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta43">
                
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Soy un pensador positivo y optimista">Soy un pensador positivo y optimista</label>
-            <select  required class="form-select" name="pregunta44">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta44">
                 
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Me siento tenso">Me siento tenso</label>
-            <select  required class="form-select" name="pregunta45">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta45">
                 
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Me siento deprimido o triste">Me siento deprimido o triste</label>
-            <select  required class="form-select" name="pregunta46">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta46">
                 
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
                 <option value="Casi nunca">Casi nunca</option>
             </select>
         </div>
+        <br>
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Me siento satisfecho con mi trabajo o actividades">Me siento satisfecho con mi trabajo o actividades</label>
-            <select  required class="form-select" name="pregunta47">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta47">
                 
                 <option value="Casi siempre">Casi siempre</option>
                 <option value="A veces">A veces</option>
@@ -195,7 +210,7 @@ $documento = $_GET['documento'];
         <div class="col">
             <label for="td" class="form-label"></label>
             <label value="Hago ejercicio de forma activa al menos 20 minutos (correr, montar en bicicleta, zumba,...)">Hago ejercicio de forma activa al menos 20 minutos (correr, montar en bicicleta, zumba,...)</label>
-            <select  required class="form-select" name="pregunta48">
+            <select class="btn btn-outline-dark" required class="form-select" name="pregunta48">
                
                 <option value="4 o más veces por semana">4 o más veces por semana</option>
                 <option value="1 a 3 veces por semana">1 a 3 veces por semana</option>
@@ -203,6 +218,7 @@ $documento = $_GET['documento'];
             </select>
         </div>
         <center><button type="submit" class="btn btn-primary">Siguiente Pagina <i class="fa fa-angle-right"></i></button> </center>
+<<<<<<< HEAD
         </article>
  </form>
  <!-- <article class="Diseño">
@@ -269,6 +285,11 @@ $documento = $_GET['documento'];
         </a>
  
 </article> -->
+=======
+
+        </article>
+ </form>
+>>>>>>> 5297efb62a3d470b889116ff56b4a10109f905c7
 
 <br><br>
 </div>
