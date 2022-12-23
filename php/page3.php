@@ -34,7 +34,6 @@ $documento = $_GET['documento'];
         </ul>
     </nav>
 </header>
-
 <div class="contenedor">
     <article>
         <h2>Economico</h2><hr>

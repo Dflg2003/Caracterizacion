@@ -33,13 +33,13 @@ $documento = $_GET['documento'];
 </header>
     <div class="contenedor">
         <article>
-        <form action="page7.php" method="POST">
-            <p>
-            <h2>Autoconocimiento</h2><hr>
+        <h2>Autoconocimiento</h2><hr>
+        <form action="page7.php" class="formulario" method="POST">
+        <div class="col">
 <?php
 echo "<input type='hidden' name='documento' value='$documento'>";
 ?>
-           
+        <div class="col">
             
             <label for="">Identifica qué tanto te describen con las siguientes frases:</label>
             <br><br>
