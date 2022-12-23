@@ -38,7 +38,7 @@ $documento = $_GET['documento'];
     <article>
         <h3>Autoconocimiento</h3>
 <?php
-echo "<input type='hidden' name='documento' value='$documento'>";
+echo "<input type='hidden' name='documento' value='$id_user'>";
 ?>
         <hr>
         <label for="sustancias" class="form-label">Consumo mucha azúcar, sal, comida chatarra o grasosa: </label>
