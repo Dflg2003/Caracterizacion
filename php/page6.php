@@ -273,9 +273,6 @@ echo "<input type='hidden' name='documento' value='$documento'>";
        
  </form> 
 
-<article>
-    <button type="submit" class="enviar"  onclick="verificar()">Enviar</button>
-</article>
 
 
      
