@@ -233,7 +233,7 @@ echo "<input type='hidden' name='documento' value='$documento'>";
         </select>
         </div>
         <br>
-        <div class="botones">
+        <!-- <div class="botones">
         <label for="sustancias" class="form-label">Suelo conducir después de consumir alguna bebida alcohólica: </label>
         <select class="btn btn-outline-dark" class="form-select" name="pregunta93"  required>
             
@@ -251,8 +251,8 @@ echo "<input type='hidden' name='documento' value='$documento'>";
             <option value="Siempre">Siempre</option>
             <option value="A veces">A veces</option>
             <option value="Casi nunca">Casi nunca</option>
-        </select><br><br>
-        </div>
+        </select><br><br> -->
+        </div><br><br>
         <center><button type="submit" class="btn btn-primary">Siguiente Pagina <i class="fa fa-angle-right"></i></button> </center>
 
 </article>
