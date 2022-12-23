@@ -37,7 +37,7 @@ $documento = $_GET['documento'];
         <form action="page7.php" class="formulario" method="POST">
         <div class="col">
 <?php
-echo "<input type='hidden' name='id_user' value='$id_user'>";
+echo "<input type='hidden' name='documento' value='$documento'>";
 ?>
         <div class="col">
             
@@ -98,18 +98,11 @@ echo "<input type='hidden' name='id_user' value='$id_user'>";
                 <option value="Me describe totalmente">Me describe totalmente</option>
             </select><br><br>
 
-            <div class="col">
-            <label for="td" class="form-label">El área de bienestar tiene el servicio de orientación psicopedagógica donde te brindan acompañamientos personal y académico ¿te gustaría participar en este proceso y que uno de nuestros psicólogos se comunique contigo?</label>
-            <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta55" value="Si" checked>Si
-                <label class="form-check-label" for="radio1"></label>
-              </div>
-
-              <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta55" value="No">No
-                <label class="form-check-label" for="radio2"></label>
-              </div>
-        </div>
+            <label for="">El área de bienestar tiene el servicio de orientación psicopedagógica donde te brindan acompañamientos personal y académico ¿te gustaría participar en este proceso y que uno de nuestros psicólogos se comunique contigo?</label>
+            <label for="Si">Si</label>
+            <input type="radio" name="pregunta55" id="" class="radioButtonP" value="Si" required>
+            <label for="No">No</label>
+            <input type="radio" name="pregunta55" id="" class="radioButtonP" value="No" required><br><br>
 
             <label for="texto">En el siguiente espacio puede ampliar sus respuestas y plantear sugerencias a UniEm; agradecemos sus aportes, ¡feliz día!.</label>
                 <input  type="text" id="texto" name="pregunta56" onkeyup="validar()" onblur="validar()"  placeholder="Escribe aquí" value="En el siguiente espacio puede ampliar sus respuestas y plantear sugerencias a UniEm; agradecemos sus aportes, ¡feliz día!." required/>
@@ -216,18 +209,12 @@ echo "<input type='hidden' name='id_user' value='$id_user'>";
                 <option value="Nunca">Nunca</option>
             </select><br><br>
 
-            <div class="col">
-            <label for="td" class="form-label">¿Elegiste este programa como tu primera opción para la formación superior?</label>
-            <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta68" value="Si" checked>Si
-                <label class="form-check-label" for="radio1"></label>
-              </div>
-
-              <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta68" value="No">No
-                <label class="form-check-label" for="radio2"></label>
-              </div>
-           
+            <label for="">¿Elegiste este programa como tu primera opción para la formación superior?</label>
+            <label style="margin-left: 15px;" for="Si">Si</label>
+            <input type="radio" name="pregunta68" id="" class="radioButtonE" value="Si" required>
+            <label for="No">No</label>
+            <input type="radio" name="pregunta68" id="" class="radioButtonE" value="No" required><br><br>
+            
             <label value="conozco el contenido (materias) del programa que elegí">conozco el contenido (materias) del programa que elegí</label>
             <select class="btn btn-outline-dark" name="pregunta69" id="" class="form-select" required>
                 <option value="totalmente">totalmente</option>
@@ -245,20 +232,12 @@ echo "<input type='hidden' name='id_user' value='$id_user'>";
                 <option value="totalmente en desacuerdo">totalmente en desacuerdo</option>
             </select><br><br>
 
-            <div class="col">
-            <label for="td" class="form-label">¿Realizaste proceso de orientación vocacional para la elección de tu carrera</label>
-            <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta71" value="Si" checked>Si
-                <label class="form-check-label" for="radio1"></label>
-              </div>
-
-              <div class="form-check">
-                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta71" value="No">No
-                <label class="form-check-label" for="radio2"></label>
-              </div>
-        </div>
-        </article>
-
+            <label for="">¿Realizaste proceso de orientación vocacional para la elección de tu carrera</label>
+            <label style="margin-left: 15px;" for="Si">Si</label>
+            <input type="radio" name="pregunta71" id="" class="radioButtonE" value="Si" required>
+            <label for="No">No</label>
+            <input type="radio" name="pregunta71" id="" class="radioButtonE" value="No" required><br><br>
+             </article>
             <article>
                 <h2>Conocimiento</h2><hr>
              <label value="Para elegir este programa, tuve la oportunidad de conversar con personas graduadas que me compartieron información valiosa para tomar mi desición">Para elegir este programa, tuve la oportunidad de conversar con personas graduadas que me compartieron información valiosa para tomar mi desición</label>
