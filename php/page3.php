@@ -39,14 +39,11 @@ $documento = $_GET['documento'];
     <article>
         <h2>Economico</h2><hr>
 <form action="page4.php" class="formulario" method="POST">
-<<<<<<< HEAD
     <div class="col">
-=======
 <?php
 echo "<input type='hidden' name='documento' value='$documento'>";
 ?>
 <div class="col">
->>>>>>> 5297efb62a3d470b889116ff56b4a10109f905c7
         <label for="td" class="form-label">¿Alguién depende económicamente de ti?</label>
         <div class="form-check">
             <input type="radio"  required  class="form-check-input" id="radio1" name="pregunta34" value="SI" checked>
@@ -218,7 +215,7 @@ echo "<input type='hidden' name='documento' value='$documento'>";
             </select>
         </div>
         <center><button type="submit" class="btn btn-primary">Siguiente Pagina <i class="fa fa-angle-right"></i></button> </center>
-<<<<<<< HEAD
+
         </article>
  </form>
  <!-- <article class="Diseño">
@@ -284,12 +281,10 @@ echo "<input type='hidden' name='documento' value='$documento'>";
         </button>
         </a>
  
-</article> -->
-=======
+</article> --> 
 
         </article>
  </form>
->>>>>>> 5297efb62a3d470b889116ff56b4a10109f905c7
 
 <br><br>
 </div>
