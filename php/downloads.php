@@ -1,5 +1,4 @@
 <?php
-$documento = $_POST['documento'];
         header("Content-Type: application/xls");
         header("Content-Disposition: attachment; filename=descarga.xls");
 ?>
@@ -115,7 +114,7 @@ $documento = $_POST['documento'];
             <?php
 include 'conexion.php';
 
-$sql = "SELECT datos_personales.*, respuestas.* FROM datos_personales INNER JOIN respuestas ON datos_personales.documento = respuestas.id_user WHERE datos_personales.documento = '$documento'";
+$sql = "SELECT datos_personales.*, respuestas.* FROM datos_personales INNER JOIN respuestas ON datos_personales.documento = respuestas.id_user;";
   $consulta = mysqli_query($con, $sql);
   if (mysqli_num_rows($consulta) > 0) {
     while($row = mysqli_fetch_assoc($consulta)) {

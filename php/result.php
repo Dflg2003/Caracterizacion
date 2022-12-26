@@ -61,6 +61,13 @@ $sql = "SELECT * FROM datos_personales";
                 <td><?php echo $row["celular"]; ?></td>
                 <td><?php echo $row["nombre_emergencia"]; ?></td>
                 <td><?php echo $row["celular_emergencia"]; ?></td>
+                <td>
+                <form action="download.php" method="post">
+                  <input type="hidden" name="documento" value="<?php echo $row["documento"]; ?>">
+                  <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas
+                </button>
+                </form>
+                </td>
               </tr>
             </tbody>
             <?php
