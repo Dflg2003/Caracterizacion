@@ -59,11 +59,19 @@ echo "<input type='hidden' name='documento' value='$documento'>";
         </select>
         <br>
         <br>
-        <label for="">¿Tienes alguna condición médica, física o psicológica particular?</label>
-        <label style="margin-left: 15px;" for="Si" value="Si">Si</label>
-        <input type="radio" name="pregunta77" id="" class="radioButtonP" required>
-        <label for="No">No</label>
-        <input type="radio" name="pregunta77" id="" class="radioButtonP" required><br><br>
+
+        <div class="col">
+            <label for="td" class="form-label">¿Tienes alguna condición médica, física o psicológica particular?</label>
+            <div class="form-check">
+                <input type="radio"  required class="form-check-input" id="radio1" name="pregunta77" value="Si" checked>Si
+                <label class="form-check-label" for="radio1"></label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio"  required class="form-check-input" id="radio2" name="pregunta77" value="No">No
+                <label class="form-check-label" for="radio2"></label>
+              </div>
+        </div><br><br>
 
         <label for="sustancias" class="form-label">Perteneces a alguno de los siguientes grupos o poblaciones: </label>
         <select class="btn btn-outline-dark" class="form-select" name="pregunta78"  required>
@@ -216,7 +224,6 @@ echo "<input type='hidden' name='documento' value='$documento'>";
         <div class="botones">
         <label for="sustancias" class="form-label">En dado caso de consumir licor semanalmente. Tu número promedio de tragos es de: </label>
         <select class="btn btn-outline-dark" class="form-select" name="pregunta91"  required>
-            <option value=":"></option>
             <option value="1 a 7 tragos">1 a 7 tragos</option>
             <option value="8 a 12 tragos">8 a 12 tragos</option>
             <option value="Más de 12 tragos">Más de 12 tragos</option>

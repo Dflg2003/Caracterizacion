@@ -5,12 +5,12 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+/*reseteo de los estilo de la pagina*/
 body {
 	font-family:helvetica, arial, sans-serif;
 	line-height:20px;
 }
-
+/*estilo de la fuente*/
 .contenedor {
 	width: 90%;
 	max-width:900px;
@@ -26,27 +26,29 @@ article {
 	color:rgb(2, 0, 0);
 	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
 }
-
+/*estilo de las cajas donde se encuentra la informacion*/
 article h2 {
 	color:rgb(7, 7, 7);
 }
+/*color de la letra*/
 article h3 {
 	color:rgb(7, 7, 7);
 }
-
+/*color de la letra*/
 article hr {
 	background:#020202;
 	height:5px;
 	border:none;
 }
-
+/*color de la linea separadora*/
 article p {
 	line-height: 25px;
 }
-
+/*ancho de la linea de letra*/
 article h2, article p, article hr {
 	margin-bottom: 20px;
 }
+/*margen del boton*/
 .inscrito{
 	width: 50%;
 }

@@ -21,7 +21,7 @@ $pregunta7 = $_POST['pregunta7'];
 $pregunta8 = $_POST['pregunta8'];
 $pregunta9 = $_POST['pregunta9'];
 $pregunta10 = $_POST['pregunta10'];
-
+// conexion de las preguntas guardadas en el html con class con como aparecen en la base de datos
 
 $sql = "INSERT INTO datos_personales (nombre, td, documento, programa, email, celular, parentesco_emergencia, nombre_emergencia, celular_emergencia, pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7, pregunta8, pregunta9, pregunta10) VALUES ('$nombre', '$td', '$documento', '$programa', '$email', '$celular', '$parentesco_emergencia', '$nombre_emergencia', '$celular_emergencia', '$pregunta1', '$pregunta2', '$pregunta3', '$pregunta4', '$pregunta5', '$pregunta6', '$pregunta7', '$pregunta8', '$pregunta9', '$pregunta10') ";
 
@@ -31,5 +31,5 @@ $consulta = mysqli_query($con, $sql);
 if ($consulta > 0) {
     header("Location: page1.php?documento=$documento");
 }
-
+//cuando guarda los datos y verifica que todo este respondido manda a la otra pag
 ?>

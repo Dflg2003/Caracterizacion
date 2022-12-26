@@ -8,3 +8,4 @@ if ($con) {
 }
 
 ?>
+<!-- conexion con el html y verificacion de conectar -->
