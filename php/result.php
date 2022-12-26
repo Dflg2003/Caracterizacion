@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Style/result.css">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $("input").ready(function(){
+    var codigo = $("#table").html();
+    $("#codigo").attr("value", codigo);
+  });
+    </script>
 </head>
-<body>
+<body class="fondo">
+    <header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="../assets/img/FondoUe.jpg" alt="" class="logo">
+        </a>
+    </nav>
+</header>>
     <div class="container">
         <table class="table">
             <thead class="thead-dark">
@@ -23,7 +42,7 @@
                 <th scope="col">Otras preguntas</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="table">
             <?php
 include 'conexion.php';
 
@@ -42,7 +61,13 @@ $sql = "SELECT * FROM datos_personales";
                 <td><?php echo $row["celular"]; ?></td>
                 <td><?php echo $row["nombre_emergencia"]; ?></td>
                 <td><?php echo $row["celular_emergencia"]; ?></td>
-                <td><button type="button" class="btn btn-success">Descargar</button></td>
+                <td>
+                <form action="download.php" method="post">
+                  <input type="hidden" name="documento" value="<?php echo $row["documento"]; ?>">
+                  <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas
+                </button>
+                </form>
+                </td>
               </tr>
             </tbody>
             <?php
@@ -55,7 +80,10 @@ $sql = "SELECT * FROM datos_personales";
           </table>
           
     </article>
-    
+    <form action="download.php" method="post">
+    <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas
+  </button>
+  </form>
     
 </body>
 </html>
