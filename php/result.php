@@ -62,7 +62,7 @@ $sql = "SELECT * FROM datos_personales";
           
     </article>
     <form action="download.php" method="post">
-    <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar
+    <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas
   </button>
   </form>
     
