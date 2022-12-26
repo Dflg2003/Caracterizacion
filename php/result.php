@@ -49,7 +49,6 @@ $sql = "SELECT * FROM datos_personales";
                 <td><?php echo $row["celular"]; ?></td>
                 <td><?php echo $row["nombre_emergencia"]; ?></td>
                 <td><?php echo $row["celular_emergencia"]; ?></td>
-                <td><button type="button" class="btn btn-success">Descargar</button></td>
               </tr>
             </tbody>
             <?php
