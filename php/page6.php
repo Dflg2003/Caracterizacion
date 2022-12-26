@@ -100,7 +100,7 @@ echo "<input type='hidden' name='documento' value='$documento'>";
 
 
             <div class="col">
-            <label for="td" class="form-label">El área de bienestar tiene el servicio de orientación psicopedagógica donde te brindan acompañamientos personal y académico ¿te gustaría participar en este proceso y que uno de nuestros psicólogos se comunique contigo?</label>>
+            <label for="td" class="form-label">El área de bienestar tiene el servicio de orientación psicopedagógica donde te brindan acompañamientos personal y académico ¿te gustaría participar en este proceso y que uno de nuestros psicólogos se comunique contigo?</label>
             <div class="form-check">
                 <input type="radio"  required class="form-check-input" id="radio1" name="pregunta55" value="Si" checked>Si
                 <label class="form-check-label" for="radio1"></label>
@@ -246,7 +246,7 @@ echo "<input type='hidden' name='documento' value='$documento'>";
                 <option value="En desacuerdo">En desacuerdo</option>
                 <option value="totalmente en desacuerdo">totalmente en desacuerdo</option>
             </select><br><br>
-            
+
             <div class="col">
             <label for="td" class="form-label">¿Realizaste proceso de orientación vocacional para la elección de tu carrera</label>
             <div class="form-check">
