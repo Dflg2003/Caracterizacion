@@ -15,18 +15,7 @@
   });
     </script>
 </head>
-<body class="fondo">
-    <header>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
-            <img src="../assets/img/FondoUe.jpg" alt="" class="logo">
-        </a>
-    </nav>
-</header>>
+<body>
     <div class="container">
         <table class="table">
             <thead class="thead-dark">
