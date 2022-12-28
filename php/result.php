@@ -1,3 +1,13 @@
+<?php
+session_start();
+include 'conexion.php';
+$user = $_SESSION["user"];
+$sql = "SELECT * FROM usuarios WHERE nombre ='$user'";
+
+
+$consulta = mysqli_query($con, $sql);
+if (mysqli_num_rows($consulta) > 0) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,3 +86,9 @@ $sql = "SELECT * FROM datos_personales";
     
 </body>
 </html>
+<?php
+
+}else{
+  die("No tienes acceso a esta pagina.");
+}
+?>

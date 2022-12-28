@@ -34,7 +34,7 @@ $sql = "UPDATE datos_personales SET pregunta11 = '$pregunta11', pregunta12 = '$p
 echo $sql;
 $consulta = mysqli_query($con, $sql);
 
-if ($consulta > 0) {
+if (mysqli_num_rows($consulta) > 0) {
     header("Location: page3.php?documento=$documento"   );
 }
 
