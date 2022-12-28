@@ -12,73 +12,6 @@
     
 }
 
-button{
-    margin: 10px;
-    position: relative;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    background: rgba(255, 255, 255, 0.925);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    transition: .5s;
-    overflow: hidden;
-}
-
-button:hover{
-    color: rgb(0, 0, 0);
-}
-
-button span{
-    position: absolute;
-    background: rgb(0, 0, 0);
-    transition: .5s;
-}
-
-button span:nth-child(1){
-    width: 100%;
-    height: 1px;
-    top: 0;
-    left: -100%;
-}
-
-button span:nth-child(2){
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    right: -100%;
-}
-
-button span:nth-child(3){
-    width: 1px;
-    height: 100%;
-    bottom: -100%;
-    left: 0;
-}
-
-button span:nth-child(4){
-    width: 1px;
-    height: 100%;
-    top: -100%;
-    right: 0;
-}
-
-button:hover span:nth-child(1){
-    left: 0;
-}
-
-button:hover span:nth-child(2){
-    right: 0;
-}
-
-button:hover span:nth-child(3){
-    bottom: 0;
-}
-
-button:hover span:nth-child(4){
-    top: 0;
-}
-
 /*////////////////////////////*/
 .Envio{
     margin: 10px;
@@ -91,4 +24,42 @@ button:hover span:nth-child(4){
     cursor: pointer;
     transition: .5s;
     overflow: hidden;
+}
+
+
+/*estilo del boton*/
+
+button {
+    padding: 0px 15px;
+ border: unset;
+ color: #fff;
+ z-index: 1;
+ background: #0A0A85;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ transition: all 250ms;
+ overflow: hidden;
+}
+
+button::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ background-color: #EA0B2A;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+button:hover {
+ color: #000;
+}
+
+button:hover::before {
+ width: 100%;
 }
