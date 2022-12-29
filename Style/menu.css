@@ -92,7 +92,7 @@ li a.active, li a:hover{
     }
     li a:hover, li a.active{
         background: none;
-        color: red;
+        color: cyan;
     }
     #check:checked ~ ul{
         left:0;
@@ -205,8 +205,8 @@ footer{
 }
 
 .tablaR{
-    margin-left: 9%;
-    margin-right: 9%;
+    margin-left: 3%;
+    margin-right: 3%;
     border-color: black;
     border-radius: 30px;
 }
