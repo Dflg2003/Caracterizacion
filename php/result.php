@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Style/result.css">
+    <link rel="stylesheet" href="../Style/menu.css">
     
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -17,8 +18,8 @@
     </script>
 </head>
 <body class="fondo">
-    <div class="container">
-        <table class="table">
+    <div class="tablaR">
+        <table class="table" style="margin-top: 50px;">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Nobre completo</th>
@@ -46,15 +47,15 @@ $sql = "SELECT * FROM datos_personales";
 ?>
 
               <tr>
-                <td><?php echo $row["nombre"]; ?></td>
-                <td><?php echo $row["td"]; ?></td>
-                <td><?php echo $row["documento"]; ?></td>
-                <td><?php echo $row["programa"]; ?></td>
-                <td><?php echo $row["email"]; ?></td>
-                <td><?php echo $row["celular"]; ?></td>
-                <td><?php echo $row["nombre_emergencia"]; ?></td>
-                <td><?php echo $row["celular_emergencia"]; ?></td>
-                <td>
+                <td class="border border-dark"><?php echo $row["nombre"]; ?></td>
+                <td class="border border-dark"><?php echo $row["td"]; ?></td>
+                <td class="border border-dark"><?php echo $row["documento"]; ?></td>
+                <td class="border border-dark"><?php echo $row["programa"]; ?></td>
+                <td class="border border-dark"><?php echo $row["email"]; ?></td>
+                <td class="border border-dark"><?php echo $row["celular"]; ?></td>
+                <td class="border border-dark"><?php echo $row["nombre_emergencia"]; ?></td>
+                <td class="border border-dark"><?php echo $row["celular_emergencia"]; ?></td>
+                <td class="border border-dark">
                 <form action="download.php" method="post">
                   <input type="hidden" name="documento" value="<?php echo $row["documento"]; ?>">
                   <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas

@@ -216,4 +216,8 @@ footer{
 .border-dark {
     border-color: #343a40!important;
 }
+td{
+   background-color: white !important;
+
+}
 
