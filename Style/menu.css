@@ -218,6 +218,13 @@ footer{
 }
 td{
    background-color: white !important;
+}
 
+button{
+    background-color: blue !important ;
+    transition: background-color .5s !important;
+}
+button:hover{
+   background-color: cyan !important;
 }
 
