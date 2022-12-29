@@ -6,7 +6,7 @@ $sql = "SELECT * FROM usuarios WHERE nombre ='$user'";
 
 
 $consulta = mysqli_query($con, $sql);
-if (mysqli_num_rows($consulta) > 0) {
+if (mysqli_num_rows($consulta) > 0) {}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,15 +42,21 @@ if (mysqli_num_rows($consulta) > 0) {
               </tr>
             </thead>
             <tbody id="table">
-            <?php
-include 'conexion.php';
-
-$sql = "SELECT * FROM datos_personales";
-  $consulta = mysqli_query($con, $sql);
-  if (mysqli_num_rows($consulta) > 0) {
-    while($row = mysqli_fetch_assoc($consulta)) {
-?>
-
+            <?php 
+  if(!empty($_REQUEST["nume"])){ $_REQUEST["nume"] = $_REQUEST["nume"];}else{ $_REQUEST["nume"] = '1';}
+            if($_REQUEST["nume"] == "" ){$_REQUEST["nume"] = "1";}
+            $articulos=mysqli_query($con,"SELECT * FROM datos_personales;");
+            $num_registros=@mysqli_num_rows($articulos);
+            $registros= '3';
+            $pagina=$_REQUEST["nume"];
+            if (is_numeric($pagina)){
+            $inicio= (($pagina-1)*$registros);
+            }else{
+            $inicio=0;
+            $busqueda=mysqli_query($con,"SELECT * FROM datos_personales LIMIT $inicio,$registros;");
+            $paginas=ceil($num_registros/$registros);}
+            ?>
+            <?php while ($resultado = mysqli_fetch_assoc($busqueda)){ ?>
               <tr>
                 <td><?php echo $row["nombre"]; ?></td>
                 <td><?php echo $row["td"]; ?></td>
@@ -69,13 +75,6 @@ $sql = "SELECT * FROM datos_personales";
                 </td>
               </tr>
             </tbody>
-            <?php
-        }
-    }else{
-      echo "No se encontraron Resultados";
-    }
-  
-  ?>
           </table>
           
     </article>
@@ -83,27 +82,37 @@ $sql = "SELECT * FROM datos_personales";
     <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas
   </button>
   <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
+  <div class="container-fluid  col-12">
+        <ul class="pagination pg-dark justify-content-center pb-5 pt-5 mb-0" style="float: none;" >
+            <li class="page-item">
+            <?php
+            if($_REQUEST["nume"] == "1" ){
+            $_REQUEST["nume"] == "0";
+            echo  "";
+            }else{
+            if ($pagina>1)
+            $ant = $_REQUEST["nume"] - 1;
+            echo "<a class='page-link' aria-label='Previous' href='index.php?nume=1'><span aria-hidden='true'>&laquo;</span><span class='sr-only'>Previous</span></a>"; 
+            echo "<li class='page-item '><a class='page-link' href='index.php?nume=". ($pagina-1) ."' >".$ant."</a></li>"; }
+            echo "<li class='page-item active'><a class='page-link' >".$_REQUEST["nume"]."</a></li>"; 
+            $sigui = $_REQUEST["nume"] + 1;
+            $ultima = $num_registros / $registros;
+            if ($ultima == $_REQUEST["nume"] +1 ){
+            $ultima == "";}
+            if ($pagina<$paginas && $paginas>1)
+            echo "<li class='page-item'><a class='page-link' href='index.php?nume=". ($pagina+1) ."'>".$sigui."</a></li>"; 
+            if ($pagina<$paginas && $paginas>1)
+            echo "
+            <li class='page-item'><a class='page-link' aria-label='Next' href='index.php?nume=". ceil($ultima) ."'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a>
+            </li>";
+            ?>
+        </ul>
+    </div>
 </nav>
-
-    
   </form>
-    
 </body>
 </html>
 <?php
 
-}else{
-  die("No tienes acceso a esta pagina.");
-}
+            }
 ?>

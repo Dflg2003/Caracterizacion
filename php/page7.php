@@ -40,7 +40,7 @@ $consulta = mysqli_query($con, $sql);
 if (mysqli_num_rows($consulta) > 0) {
     //De aca nos debe votar a la ultima del formulario no a la pagina 8
 
-    header("Location: page8.php?documento=$documento"   );
+    header("Location: page8.php?documento=$documento");
 
 }
 
