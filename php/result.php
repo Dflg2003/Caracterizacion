@@ -50,18 +50,17 @@ if (mysqli_num_rows($consulta) > 0) {}
             <?php 
   if(!empty($_REQUEST["nume"])){ $_REQUEST["nume"] = $_REQUEST["nume"];}else{ $_REQUEST["nume"] = '1';}
             if($_REQUEST["nume"] == "" ){$_REQUEST["nume"] = "1";}
-            $articulos=mysqli_query($con,"SELECT * FROM datos_personales;");
+            $articulos=mysqli_query($con,"SELECT * FROM datos_personales  ;");
             $num_registros=@mysqli_num_rows($articulos);
-            $registros= '3';
+            $registros= '5';
             $pagina=$_REQUEST["nume"];
-            if (is_numeric($pagina)){
+            if (is_numeric($pagina))
             $inicio= (($pagina-1)*$registros);
-            }else{
+            else
             $inicio=0;
             $busqueda=mysqli_query($con,"SELECT * FROM datos_personales LIMIT $inicio,$registros;");
-            $paginas=ceil($num_registros/$registros);}
-            ?>
-            <?php while ($resultado = mysqli_fetch_assoc($busqueda)){ ?>
+            $paginas=ceil($num_registros/$registros);
+            while ($row = mysqli_fetch_assoc($busqueda)){ ?>
               <tr>
                 <td class="border border-dark"><?php echo $row["nombre"]; ?></td>
                 <td class="border border-dark"><?php echo $row["td"]; ?></td>
@@ -79,6 +78,7 @@ if (mysqli_num_rows($consulta) > 0) {}
                 </form>
                 </td>
               </tr>
+              <?php } ?>
             </tbody>
           </table>
           
@@ -97,18 +97,18 @@ if (mysqli_num_rows($consulta) > 0) {}
             }else{
             if ($pagina>1)
             $ant = $_REQUEST["nume"] - 1;
-            echo "<a class='page-link' aria-label='Previous' href='index.php?nume=1'><span aria-hidden='true'>&laquo;</span><span class='sr-only'>Previous</span></a>"; 
-            echo "<li class='page-item '><a class='page-link' href='index.php?nume=". ($pagina-1) ."' >".$ant."</a></li>"; }
+            echo "<a class='page-link' aria-label='Previous' href='result.php?nume=1'><span aria-hidden='true'>&laquo;</span><span class='sr-only'>Previous</span></a>"; 
+            echo "<li class='page-item '><a class='page-link' href='result.php?nume=". ($pagina-1) ."' >".$ant."</a></li>"; }
             echo "<li class='page-item active'><a class='page-link' >".$_REQUEST["nume"]."</a></li>"; 
             $sigui = $_REQUEST["nume"] + 1;
             $ultima = $num_registros / $registros;
             if ($ultima == $_REQUEST["nume"] +1 ){
             $ultima == "";}
             if ($pagina<$paginas && $paginas>1)
-            echo "<li class='page-item'><a class='page-link' href='index.php?nume=". ($pagina+1) ."'>".$sigui."</a></li>"; 
+            echo "<li class='page-item'><a class='page-link' href='result.php?nume=". ($pagina+1) ."'>".$sigui."</a></li>"; 
             if ($pagina<$paginas && $paginas>1)
             echo "
-            <li class='page-item'><a class='page-link' aria-label='Next' href='index.php?nume=". ceil($ultima) ."'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a>
+            <li class='page-item'><a class='page-link' aria-label='Next' href='result.php?nume=". ceil($ultima) ."'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a>
             </li>";
             ?>
         </ul>
@@ -117,7 +117,3 @@ if (mysqli_num_rows($consulta) > 0) {}
   </form>
 </body>
 </html>
-<?php
-
-            }
-?>
