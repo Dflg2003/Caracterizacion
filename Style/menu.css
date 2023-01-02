@@ -221,10 +221,9 @@ td{
 }
 
 button{
-    background-color: blue !important ;
     transition: background-color .5s !important;
 }
 button:hover{
-   background-color: cyan !important;
+   background-color: #0A0A85 !important;
 }
 
