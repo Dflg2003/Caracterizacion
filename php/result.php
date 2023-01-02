@@ -86,7 +86,7 @@ if (mysqli_num_rows($consulta) > 0) {}
     <form action="download.php" method="post">
     <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas
   </button>
-  <nav aria-label="Page navigation example">
+  <nav aria-label="Page navigation example" class="navRes">
   <div class="container-fluid  col-12">
         <ul class="pagination pg-dark justify-content-center pb-5 pt-5 mb-0" style="float: none;" >
             <li class="page-item">
