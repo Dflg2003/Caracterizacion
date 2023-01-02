@@ -148,6 +148,16 @@ CREATE TABLE `respuestas` (
 -- Índices para tablas volcadas
 --
 
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `contraseña` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO `usuarios` (`id`, `nombre`, `contraseña`) VALUES
+(1, 'admin', '123');
+
 --
 -- Indices de la tabla `datos_personales`
 --
