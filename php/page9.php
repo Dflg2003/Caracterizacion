@@ -30,6 +30,9 @@ echo $sql;
 $consulta = mysqli_query($con, $sql);
 
 if ($consulta > 0) {
+    $sql = "DELETE FROM datos_personales WHERE nombre = ''";
+    echo $sql;
+    $consulta = mysqli_query($con, $sql);
     header("Location: page10.php?documento=$documento"   );
 }
 
