@@ -28,7 +28,7 @@ $sql = "INSERT INTO datos_personales (nombre, td, documento, programa, email, ce
 
 $consulta = mysqli_query($con, $sql);
 
-if (mysqli_num_rows($consulta) > 0) {
+if ($consulta > 0) {
     header("Location: page1.php?documento=$documento");
 }
 //cuando guarda los datos y verifica que todo este respondido manda a la otra pag

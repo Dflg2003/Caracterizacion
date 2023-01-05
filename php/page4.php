@@ -32,7 +32,7 @@ $sql = "INSERT INTO respuestas (id_user, pregunta34, pregunta35, pregunta36, pre
 echo $sql;
 $consulta = mysqli_query($con, $sql);
 
-if (mysqli_num_rows($consulta) > 0) {
+if ($consulta > 0) {
     header("Location: page6.php?documento=$documento"   );
 }
 

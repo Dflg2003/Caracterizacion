@@ -29,7 +29,7 @@ $sql = "UPDATE respuestas SET pregunta75 = '$pregunta75', pregunta76 = '$pregunt
 echo $sql;
 $consulta = mysqli_query($con, $sql);
 
-if (mysqli_num_rows($consulta) > 0) {
+if ($consulta > 0) {
     header("Location: page10.php?documento=$documento"   );
 }
 

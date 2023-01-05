@@ -83,7 +83,7 @@ if (mysqli_num_rows($consulta) > 0) {}
           </table>
           
     </article>
-    <form action="download.php" method="post">
+    <form action="downloads.php" method="post">
     <button class="btn btn-success" type="submit" name="action" onclick="codigo()">Descargar Respuestas
   </button>
   <nav aria-label="Page navigation example" class="navRes">
